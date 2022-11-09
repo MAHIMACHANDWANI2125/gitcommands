@@ -1,0 +1,64 @@
+git init - Initialized Git repository
+git switch -c branchname -to create new branch and move to that branch 
+git add filename - To add file to staging area
+git commit -to commit in local repo 
+
+git branch -to display all branches
+git branch branchname -to create a branch 
+git branch -m newbranchname -to rename the branch currently in
+git branch -r -to see all remote branches
+git branch -d branchname -to delete a branch
+
+git remote -v -to see all the remote repo
+
+git checkout branchname -to switch branches 
+git checkout filename-to undo changes in a file which still is in working directory
+
+git rm filename -to untrack a file and remove it 
+git rm --cached filename -to untrack a file but wont remove it
+
+git merge - to merge branches a new commit merge is created
+git branch -to display all branches 
+git rebase -to merge branche s in a linear way here a new history is recreated
+
+git diff - to compare file in working directory and staging area 
+git diff HEAD - compares both working dir and staging area with last commit
+git diff --staged -to compare file in staging area and last committed stage
+git diff branch1 branch2 -to compare two branches
+git diff commit1 commit2 -to compare two commits 
+
+git reset --soft -removes the commit and those changes are in staging area can be recommited 
+git reset --mixed -removes commit and brings the changes that  were made to woring area  and hence can be reachieved 
+git reset --hard -to reach a file previous version and completey deletes that commit such that, that change no longer exist in either woking are or staging area
+
+git log -displays all commits 
+git log --oneline --displays commit in single line 
+
+git revert hascode - used when we need we have pushed our code to remote repo and we need to undo the changes
+
+git stash - when working in a branches and we have changes in working area or staging area which we do not want to commit yet ,so to avoid conflict during branch changing or changes being taken over to other
+            branch we put our changes in stash
+git stash pop  -will bring back the changes from stash to our branch
+git stash apply - will bring back changes from stash but wont remove the changes from stash they can be used again in other branch
+git stash list -to show all stashes
+git stash drop stashid -to drop a particular stash
+git stash clear - to clear entire stash
+
+git tag -to view all tags in repo
+git tag -l "v1.0*" - to search a selected tag
+git tag tagname - to create a on current commit lightweight tag 
+git tag -a tagname -to create anotated tag 
+git show tagname -to see metadata about tag 
+git tag tagname commithash - to create a tag on specified commit 
+git tag -d tagname -to delete a tag 
+git tag -f tagname - to replace a tag 
+git push --tags -to push all tags to remote 
+git push tagname - to push a selected tag 
+Footer
+© 2022 GitHub, Inc.
+Footer navigation
+Terms
+Privacy
+Security
+Status
+Docs
